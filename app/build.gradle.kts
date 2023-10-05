@@ -10,8 +10,8 @@ android {
         applicationId = "com.AdeebTechLab.BSIS.Class.Attendance"
         minSdk = 24
         targetSdk = 33
-        versionCode = 5
-        versionName = "0.5"
+        versionCode = 8
+        versionName = "0.8"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
