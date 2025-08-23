@@ -35,7 +35,7 @@ public class Pervaiz extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String url = "https://docs.google.com/forms/d/e/1FAIpQLSeNNvHUC11dziBcgWQxg0uZlywgn38ByXqTwlf6s8K-o1Sfpw/viewform";
+                String url = "https://docs.google.com/forms/d/e/1FAIpQLSfuRsalMmqbV82CasbsNzzUW2e4KBesy6FmJZU6nVbyKmeoPQ/viewform";
                 Intent i = new Intent(Pervaiz.this, web.class);
                 i.putExtra("url",url);
                 startActivity(i);
@@ -46,7 +46,7 @@ public class Pervaiz extends AppCompatActivity {
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String url = "https://docs.google.com/spreadsheets/d/1GoYirQ7UiljuXoUPSwciHbGCaU_WYYznVlvGEF5YBIY/edit?resourcekey=&gid=110396022#gid=110396022";
+                String url = "https://docs.google.com/spreadsheets/d/1sah5LWJnfoFx-i3TBrcw-0lBbMPmhKLxhQE1ehZFfh4/edit?gid=944295711#gid=944295711";
                 Intent i = new Intent(Pervaiz.this, web.class);
                 i.putExtra("url",url);
                 startActivity(i);
@@ -57,7 +57,7 @@ public class Pervaiz extends AppCompatActivity {
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String url = "https://docs.google.com/forms/d/e/1FAIpQLSffU-uD5I2nkbA9EHKsCNq4emdODzUDIi0OODI_yNNEpSWOjg/viewform";
+                String url = "https://docs.google.com/forms/d/e/1FAIpQLSf7Y8aEEss7w4qJy9ZSNA7oiMra6i_B6fwfW-aXvKb0lSc-cw/viewform";
                 Intent i = new Intent(Pervaiz.this, web.class);
                 i.putExtra("url",url);
                 startActivity(i);
@@ -68,7 +68,7 @@ public class Pervaiz extends AppCompatActivity {
         b4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String url = "https://docs.google.com/spreadsheets/d/1WR4StvtF-KcyIFS6SjzscSA2D6yZWs-gc2LajLGMg00/edit?gid=1644940182#gid=1644940182";
+                String url = "https://docs.google.com/spreadsheets/d/1jHR-YKUr3D-GkJBw3KjWzNs53oOB-StpXoaWeAAMxd0/edit?gid=669755142#gid=669755142";
                 Intent i = new Intent(Pervaiz.this, web.class);
                 i.putExtra("url",url);
                 startActivity(i);

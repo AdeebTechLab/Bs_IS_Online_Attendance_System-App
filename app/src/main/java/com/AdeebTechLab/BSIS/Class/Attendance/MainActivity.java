@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
                     Intent i = new Intent(MainActivity.this, ShabeerAhmed.class);
                     startActivity(i);
-                } else if (user.equals("jawadjatala") && pass.equals("Qwerty@123")) {
+                } else if (user.equals("gct") && pass.equals("gct123")) {
                     Toast.makeText(MainActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
                     Intent i = new Intent(MainActivity.this, JawadAhmed.class);
                     startActivity(i);
