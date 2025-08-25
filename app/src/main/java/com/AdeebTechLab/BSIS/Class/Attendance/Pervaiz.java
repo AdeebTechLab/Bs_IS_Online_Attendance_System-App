@@ -7,6 +7,7 @@ import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -14,6 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class Pervaiz extends AppCompatActivity {
 
     ImageButton b1, b2, b3, b4, b5, b6;
+    CardView classA, classB, timetable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +75,14 @@ public class Pervaiz extends AppCompatActivity {
                 i.putExtra("url",url);
                 startActivity(i);
             }
+        });
+
+
+        timetable.setOnClickListener(view -> {
+            String url = "https://docs.google.com/spreadsheets/d/1KxIen31i7iHqPH7u-XEmRdPEusacF45whykKIkTMtk0/edit?gid=0#gid=0";
+            Intent i = new Intent(Pervaiz.this, web.class);
+            i.putExtra("url", url);
+            startActivity(i);
         });
 
     }

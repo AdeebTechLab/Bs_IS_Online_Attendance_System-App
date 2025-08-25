@@ -9,13 +9,12 @@
     tools:context=".JawadAhmed">
 
 
-
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_marginTop="20dp"
-        android:scaleType="fitStart"
         android:layout_width="match_parent"
         android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitStart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -24,10 +23,10 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_marginTop="-80dp"
-        android:layout_marginLeft="50dp"
         android:layout_width="match_parent"
         android:layout_height="70dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="-80dp"
         android:scaleType="fitStart"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,7 +34,6 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:srcCompat="@drawable/gctlogo"
         tools:ignore="MissingConstraints" />
-
 
 
     <LinearLayout
@@ -56,7 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            app:cardBackgroundColor="#F8F8F8"
+            app:cardBackgroundColor="#2d2d2d"
             app:cardCornerRadius="10dp"
             app:cardElevation="3dp">
 
@@ -70,6 +68,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/white"
                     android:text="Attendance Report for Students"
                     android:textStyle="bold" />
 
@@ -100,7 +99,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            app:cardBackgroundColor="#F8F8F8"
+            app:cardBackgroundColor="#2d2d2d"
             app:cardCornerRadius="10dp"
             app:cardElevation="3dp">
 
@@ -119,6 +118,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/white"
                     android:text="3rd Year A"
                     android:textStyle="bold" />
 
@@ -136,7 +136,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            app:cardBackgroundColor="#F8F8F8"
+            app:cardBackgroundColor="#2d2d2d"
             app:cardCornerRadius="10dp"
             app:cardElevation="3dp">
 
@@ -155,6 +155,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/white"
                     android:text="3rd Year B"
                     android:textStyle="bold" />
 
@@ -172,7 +173,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            app:cardBackgroundColor="#F8F8F8"
+            app:cardBackgroundColor="#2d2d2d"
             app:cardCornerRadius="10dp"
             app:cardElevation="3dp">
 
@@ -191,6 +192,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/white"
                     android:text="Time Table"
                     android:textStyle="bold" />
 
@@ -203,8 +205,6 @@
             android:layout_weight="1" />
 
     </LinearLayout>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,7 +30,17 @@ public class MainActivity extends AppCompatActivity {
         infobt=findViewById(R.id.button1);
 
 
+        TextView textView4 = findViewById(R.id.textView4);
 
+        textView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String url = "https://docs.google.com/forms/d/1gGYuucBG4Q0VYr6Nmtz31f5EEw-JgXxRhVdZY7Hyu7o/preview";
+                Intent i = new Intent(MainActivity.this, web.class);
+                i.putExtra("url", url);
+                startActivity(i);
+            }
+        });
 
 
 //------------Button----------------------------------------
