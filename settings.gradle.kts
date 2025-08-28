@@ -1,10 +1,11 @@
 pluginManagement {
     repositories {
+        gradlePluginPortal()
         google()
         mavenCentral()
-        gradlePluginPortal()
     }
 }
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
@@ -14,5 +15,7 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Bs.IS Attendance"
+
+// Include app module and prepare for future modularity
 include(":app")
- 
+// Example: include(":core", ":feature:attendance", ":feature:auth")

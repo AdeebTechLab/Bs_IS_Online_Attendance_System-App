@@ -16,8 +16,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/rakish_dass"
+        app:srcCompat="@drawable/pervaiz_durrani"
         tools:ignore="MissingConstraints" />
+
+
+
 
     <LinearLayout
         android:id="@+id/bt1"
@@ -34,25 +37,31 @@
             android:id="@+id/imageButton1"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
             android:backgroundTint="#00FFFFFF"
             android:scaleType="fitCenter"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView2"
-            app:srcCompat="@drawable/attendancbutton" />
+            app:srcCompat="@drawable/therd_year_a">
+
+
+
+        </ImageButton>
+
+
 
 
         <ImageButton
             android:id="@+id/imageButton2"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:backgroundTint="#00FFFFFF"
             android:scaleType="fitCenter"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageButton"
             app:layout_constraintTop_toBottomOf="@+id/imageView2"
-            app:srcCompat="@drawable/attendancerusaltbutton" />
+            app:srcCompat="@drawable/confirm_attendances" />
 
 
     </LinearLayout>
@@ -74,66 +83,72 @@
             android:id="@+id/imageButton3"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
             android:backgroundTint="#00FFFFFF"
             android:scaleType="fitCenter"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView2"
-            app:srcCompat="@drawable/sessionalbutton" />
+            app:srcCompat="@drawable/therd_year_b" />
 
 
         <ImageButton
             android:id="@+id/imageButton4"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:backgroundTint="#00FFFFFF"
             android:scaleType="fitCenter"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageButton"
             app:layout_constraintTop_toBottomOf="@+id/imageView2"
-            app:srcCompat="@drawable/sessionalrusaltbutoon" />
+            app:srcCompat="@drawable/confirm_attendance" />
 
 
     </LinearLayout>
 
-
     <LinearLayout
         android:id="@+id/bt3"
-        app:layout_constraintTop_toBottomOf="@+id/bt2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        >
+        app:layout_constraintTop_toBottomOf="@+id/bt2">
 
 
-        <ImageButton
-            android:id="@+id/imageButton5"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginRight="20dp"
-            android:backgroundTint="#00FFFFFF"
-            android:scaleType="fitCenter"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2"
-            app:srcCompat="@drawable/finebutone" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/timetable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp">
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/imageButton6"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginLeft="20dp"
-            android:backgroundTint="#00FFFFFF"
-            android:scaleType="fitCenter"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageButton"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2"
-            app:srcCompat="@drawable/finerusaltbutoon" />
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/timetabel" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Time Table"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
 
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
